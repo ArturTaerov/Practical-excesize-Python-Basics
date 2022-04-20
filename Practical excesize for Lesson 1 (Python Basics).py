@@ -98,37 +98,21 @@ x = True
 while x:
     vr = input("Введите величину выручки: ")
     rs = input("Введите величину расходов: ")
-
-#    index = 0
     y = True
     for i in range(len(str(vr)) - 1):
-
-        #if (str(vr[i])) == str(numbers[10]):
-#            index+= 1
         if (vr[i] not in numbers): # or (str(vr[0])) == str(numbers[10]) or ((str(vr[0]) == str(numbers[0])) and ((str(vr[1]) == str(numbers[0])) or (index > 1):
             print("Введено неверное значение!")
             y = False
             break
 
-#    if y == False:
-#        break
-
-#    index = 0
-
     for i in range(len(str(rs)) - 1):
-        #if (str(rs[i])) == str(numbers[10]):
-#            index += 1
         if (rs[i] not in numbers): # or (str(rs[0])) == str(numbers[10]) or ((str(rs[0]) == str(numbers[0])) and ((str(rs[1]) == str(numbers[0])) or (index > 1):
             print("Введено неверное значение!")
             y = False
             break
-#    if y == False:
-#        break
-#если точка раньше цифры или больше одного нуля или точки в начале строки, то ..
-
+            
     if (y != False) and (float(vr)>0) and (float(rs)>0):
         result = float(vr) - float(rs)
-        #print (result)
         if result > 0:
             print("Получена прибыль в размере ", result)
             break
@@ -136,7 +120,8 @@ while x:
             result = -1 * result
             print("Убыток составил ", result)
             break
-
+    else:
+        print("Введено неверное значение!")
 
 else:
     print("Введенные значения должны быть положительными!")
@@ -166,9 +151,7 @@ while x:
     if (y != False) and (float(vr)>0) and (float(rs)>0):
         result = float(vr) - float(rs)
         if result > 0:
-            #print("Получена прибыль в размере %f" % result)
             itog = float (result) / float(vr)
-            #print("Рентабельность выручки составила %f" % itog)
             str = input("Введите количество сотрудников: ")
             print("Прибыль фирмы в расчете на одного сотрудника составила {:.2f}".format(result/int(str)))
             break
@@ -194,9 +177,6 @@ else:
 # 5-й день: 2,93
 # 6-й день: 3,22
 # Ответ: на шестой день спортсмен достиг результата — не менее 3 км.
-
-#result1 = input("Введите результат спортсмена в первый день: ")
-#resultgoal = input("Введите целевой результат спортсмена: ")
 
 numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "."]
 
