@@ -10,7 +10,7 @@ dict_print = {
 j = 0
 for i in dict_print:
     j+=1
-    print(f"{j}-я итерация: j = ", j)
+    print(f"{j}-я итерация:")
     print("i = ", i)
     print(f"dict_print.get({i}) = ", dict_print.get(i))
 
