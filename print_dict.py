@@ -12,5 +12,5 @@ for i in dict_print:
     j+=1
     print(f"{j}-я итерация: j = ", j)
     print("i = ", i)
-    print("i = ", dict_print.get(i))
+    print(f"dict_print.get({i}) = ", dict_print.get(i))
 
